@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Studio</title>
+	<link rel="stylesheet" href="style.studio.css">
+</head>
+<body>
+	<div class="main"></div>
+		<nav aria-label="Menu" class="menu">
+  			<input type="checkbox" id="checkbox1" class="checkbox1">
+  			<label for="checkbox1">
+    			<div class="button button1">
+      				<span class="bar bar1"></span>
+      				<span class="bar bar2"></span>
+      				<span class="bar bar3"></span>
+    			</div>
+  			</label>
+
+  			<ul class="menu-list">
+    			<li><a href="#">Go Back</a></li>
+    			<li><a target="_blank" rel="relation_name" href="#">Open Instructions</li>
+    			<li><a href="#">Help</a></li>
+  			</ul>
+
+		</nav>
+		<div class="title">
+			<h5>Studio</h5>
+		</div>
+
+		<div class="parent">
+			<div class="parent" id="box1">
+				<h2>Frequency</h2>
+				<p2>Recommended mapping: distance from the sun (in AU) -> Hz</p2><br>
+				<p2>Recommended range: 200-4000 Hz (the so-called Midrange, where most sounds and music we hear in our daily lives vibrate)</p2>
+				<form action="/action_page.php">
+  					<label for="FreqMap">Choose what data type to map to Hz:</label>
+  					<select name="Datatype" id="Freq">
+    					<option value="AU">Distance from the sun (AU)</option>
+    					<option value="mass">Mass (EMs)</option>
+    					<option value="OrbPer">Orbital Period (Days)</option>
+    					<option value="De">Density (avg gm/cm^3)</option>
+  					</select>
+  					<br><br>
+  					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="parent" id="box2">
+				<h2>Volume</h2>
+				<p2>Recommended mapping: Density (in average gm/cm^3) -> Db</p2><br>
+				<p2>Recommended range: 30-90Db (where most daily sounds lie in)</p2>
+				<form action="/action_page.php">
+  					<label for="FreqMap">Choose what data type to map to Decibels:</label>
+  					<select name="Datatype" id="Db">
+    					<option value="De">Density (avg gm/cm^3)</option>
+    					<option value="mass">Mass (EMs)</option>
+    					<option value="OrbPer">Orbital Period (Days)</option>
+    					<option value="Au">Distance from the sun (AU)</option>
+  					</select>
+  					<br><br>
+  					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="parent" id="box3">
+				<p2>Box 3 text</p2></div>
+			<div class="parent" id="box4">
+				<p2>Box 4 text</p2>
+			</div>
+		</div>
+</body>
+</html>
